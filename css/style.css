@@ -51,6 +51,8 @@ a {
 }
 
 ul {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 
@@ -69,6 +71,7 @@ h1, h2, h3, h4, h5, h6, p {
   width: 100%;
   max-width: 1288px;
   padding: 0 24px;
+  margin: 0 auto;
 }
 
 .title {
@@ -85,21 +88,49 @@ h1, h2, h3, h4, h5, h6, p {
   margin-bottom: 48px;
 }
 
+.header a:hover,
+.footer a:hover {
+  color: var(--color-brand-light);
+  /* font-weight: 700; */
+}
+
+/* social icons */
+.social-contacts {
+  display: flex;
+  gap: 32px;
+}
+
 
 /* header section */
 .header {
   padding: 32px 0;
 }
 
+.header-navigation {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: space-around;
+  gap: 40px;
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
 .header a {
   color: var(--color-brand-durk);
   font-size: 18px;
-}
-
-.header a:hover,
-.footer a:hover {
-  color: var(--color-brand-light);
-  font-weight: 700;
 }
 
 .title .title--modeficator,
@@ -158,6 +189,12 @@ h1, h2, h3, h4, h5, h6, p {
   padding-bottom: 90px;
 }
 
+.about_content {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+}
+
 .about_content-text {
   padding-top: 40px;
   max-width: 710px;
@@ -176,6 +213,7 @@ text-transform: capitalize;
   font-size: 22px;
   line-height: 173%;
   margin-bottom: 40px;
+  padding-right: 60px;
 }
 
 .about__text--bold {
@@ -183,9 +221,9 @@ text-transform: capitalize;
   text-transform: capitalize;
 }
 
-.about_content-images {
+/* .about_content-images {
   max-width: 500px;
-}
+} */
 
 /* why_us section */
 .why-us {
@@ -209,12 +247,35 @@ text-transform: capitalize;
 }
 
 /* procedures section */
+.procedures_items {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
 .procedures_item {
   columns: var(--color-defoult-white);
   font-size: 22px;
   line-height: 118%;
   text-align: center;
 }
+
+.procedure_item-text {
+  max-width: 150px;
+  display: block;
+}
+
+.card {
+  border: 1px solid black; /*remove*/
+  border-radius: 4px 120px;
+  flex-shrink: 0;
+  flex-basis: calc((100% - 32px) / 3);
+  padding: 372px 77px 32px 115px;
+}
+
+
+/* .procedures_item {} */
+
 
 /* contacts section */
 .contacts__title {

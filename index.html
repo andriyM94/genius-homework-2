@@ -9,16 +9,18 @@
   <body>
     <header class="header">
       <div class="container">
-        <nav>
-          <a class="logo" href="/">
-            <img src="./images/logo.svg" alt="Логотип Beaty Zone" />
-          </a>
-          <ul class="menu">
-            <li><a href="#about">Про нас</a></li>
-            <li><a href="#why-us">Чому ми</a></li>
-            <li><a href="#procedures">Наші процедури</a></li>
-            <li><a href="#contacts">Контакти</a></li>
-          </ul>
+        <div class="header-navigation">
+          <nav class="header-nav">
+            <a class="logo" href="/">
+              <img src="./images/logo.svg" alt="Логотип Beaty Zone" />
+            </a>
+            <ul class="header-menu">
+              <li><a href="#about">Про нас</a></li>
+              <li><a href="#why-us">Чому ми</a></li>
+              <li><a href="#procedures">Наші процедури</a></li>
+              <li><a href="#contacts">Контакти</a></li>
+            </ul>
+          </nav>
           <div class="social-contacts">
             <a href="tel:+380960000007">
               <img src="./images/icon_phone.svg" alt="" />
@@ -26,7 +28,7 @@
             <a href="#"><img src="./images/icon_facebook.svg" alt="" /></a>
             <a href="#"><img src="./images/icon_instagram.svg" alt="" /></a>
           </div>
-        </nav>
+        </div>
       </div>
     </header>
 
@@ -63,7 +65,8 @@
                 B <span class="about__text--bold">beauty zone</span> ми
                 гарантуємо найвищі стандарти якості та приємний сервіс. Наші
                 косметологічні процедури та препарати допоможуть вам
-                підтримувати свою красу та молодість. З нами краса назавжди!
+                підтримувати свою красу та молодість. <br />З нами краса
+                назавжди!
               </p>
             </div>
             <div class="about_content-images">
@@ -75,31 +78,33 @@
       </section>
 
       <section class="why-us" id="why-us">
-        <h2 class="title">
-          Чому люди <br />
-          <span class="title--modeficator">обирають нас</span>
-        </h2>
-        <div class="why-us__itms">
-          <div class="item">
-            <img class="item-img" src="./images/icon-science.svg" alt="" />
-            <p>
-              Всі наші косметологи мають вищу медичну освіту та стаж роботи від
-              5 років
-            </p>
-          </div>
-          <div class="item">
-            <img class="item-img" src="./images/icon_two.svg" alt="" />
-            <p>
-              Використовуємо тільки професійне обладнання та косметику,
-              перевірену часом
-            </p>
-          </div>
-          <div class="item">
-            <img class="item-img" src="./images/icon_crown.svg" alt="" />
-            <p>
-              Наша мета - підкреслити переваги та приховати недоліки, а не
-              переробити
-            </p>
+        <div class="container">
+          <h2 class="title">
+            Чому люди <br />
+            <span class="title--modeficator">обирають нас</span>
+          </h2>
+          <div class="why-us__itms">
+            <div class="item">
+              <img class="item-img" src="./images/icon-science.svg" alt="" />
+              <p>
+                Всі наші косметологи мають вищу медичну освіту та стаж роботи
+                від 5 років
+              </p>
+            </div>
+            <div class="item">
+              <img class="item-img" src="./images/icon_two.svg" alt="" />
+              <p>
+                Використовуємо тільки професійне обладнання та косметику,
+                перевірену часом
+              </p>
+            </div>
+            <div class="item">
+              <img class="item-img" src="./images/icon_crown.svg" alt="" />
+              <p>
+                Наша мета - підкреслити переваги та приховати недоліки, а не
+                переробити
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -110,17 +115,23 @@
             Наші <span class="title--modeficator">процедури</span>
           </h2>
           <ul class="procedures_items">
-            <li class="procedures_item">
-              <img src="./images/slider_1.jpg" alt="" />
-              <p>Маски для обличчя</p>
+            <li class="card">
+              <article class="procedures_item">
+                <!-- <img src="./images/slider_1.jpg" alt="" /> -->
+                <p class="procedure_item-text">Маски <br>для обличчя</p>
+              </article class="procedures_item">
             </li>
-            <li class="procedures_item">
-              <img src="./images/slider_2.jpg" alt="" />
-              <p>Ін'єкції для обличчя</p>
+            <li class="card">
+              <article class="procedures_item">
+                <!-- <img src="./images/slider_2.jpg" alt="" /> -->
+                <p class="procedure_item-text">Ін'єкції <br>для обличчя</p>
+              </article>
             </li>
-            <li class="procedures_item">
-              <img src="./images/slider_3.jpg" alt="" />
-              <p>Очищення обличчя</p>
+            <li class="card">
+              <article class="procedures_item">
+                <!-- <img src="./images/slider_3.jpg" alt="" /> -->
+                <p class="procedure_item-text">Очищення <br>обличчя</p>
+              </article>
             </li>
           </ul>
         </div>
