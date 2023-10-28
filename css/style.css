@@ -1,28 +1,29 @@
 @font-face {
   font-display: swap;
-  font-family: "Play";
+  font-family: 'Play';
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/play-v19-cyrillic_latin-700.woff2") format("woff2"),
-    url("../fonts/play-v19-cyrillic_latin-700.ttf") format("truetype");
+  src: url('../fonts/play-v19-cyrillic_latin-700.woff2') format('woff2'),
+    url('../fonts/play-v19-cyrillic_latin-700.ttf') format('truetype');
 }
 
 @font-face {
-  font-display: swap; 
+  font-display: swap;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/roboto-v30-cyrillic-ext_latin-regular.woff2') format('woff2'),
-       url('../fonts/roboto-v30-cyrillic-ext_latin-regular.ttf') format('truetype'); /
+  src: url('../fonts/roboto-v30-cyrillic-ext_latin-regular.woff2')
+      format('woff2'),
+    url('../fonts/roboto-v30-cyrillic-ext_latin-regular.ttf') format('truetype');
 }
 
 @font-face {
-  font-display: swap; 
+  font-display: swap;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
-  src: url('../fonts/roboto-v30-cyrillic-ext_latin-500.woff2') format('woff2'), 
-       url('../fonts/roboto-v30-cyrillic-ext_latin-500.ttf') format('truetype'); 
+  src: url('../fonts/roboto-v30-cyrillic-ext_latin-500.woff2') format('woff2'),
+    url('../fonts/roboto-v30-cyrillic-ext_latin-500.ttf') format('truetype');
 }
 
 @font-face {
@@ -30,16 +31,16 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/roboto-v30-cyrillic-ext_latin-700.woff2') format('woff2'), 
-       url('../fonts/roboto-v30-cyrillic-ext_latin-700.ttf') format('truetype'); 
+  src: url('../fonts/roboto-v30-cyrillic-ext_latin-700.woff2') format('woff2'),
+    url('../fonts/roboto-v30-cyrillic-ext_latin-700.ttf') format('truetype');
 }
 
-:root{
-  --color-defoult-white: #FFFFFF;
+:root {
+  --color-defoult-white: #ffffff;
   --color-defoult-black: #000000;
-  --color-brand-light: #2B7FFF;
-  --color-brand-durk: #011C44;
-  --color-first-grey: #4A4A4A;
+  --color-brand-light: #2b7fff;
+  --color-brand-durk: #011c44;
+  --color-first-grey: #4a4a4a;
 }
 
 * {
@@ -63,7 +64,13 @@ body {
   margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin-top: 0;
 }
 
@@ -83,7 +90,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .why-us .title,
 .procedures .title,
-.contacts .title{
+.contacts .title {
   text-align: center;
   margin-bottom: 48px;
 }
@@ -100,10 +107,23 @@ h1, h2, h3, h4, h5, h6, p {
   gap: 32px;
 }
 
+.social-contacts svg {
+  width: 32px;
+  height: 32px;
+}
 
 /* header section */
 .header {
   padding: 32px 0;
+}
+
+.header .social-contacts svg {
+  color: var(--color-brand-durk);
+}
+
+.header .social-contacts svg:hover,
+.footer .social-contacts svg:hover {
+  fill: var(--color-brand-light);
 }
 
 .header-navigation {
@@ -134,7 +154,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .title .title--modeficator,
-.contacts__title .title--modeficator{
+.contacts__title .title--modeficator {
   color: var(--color-brand-light);
 }
 
@@ -177,8 +197,8 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .button:hover {
-   color: var(--color-brand-durk);
-   background-color: transparent;
+  color: var(--color-brand-durk);
+  background-color: transparent;
 }
 
 .hero__button-about-text {
@@ -209,7 +229,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .about .title .title--modeficator {
-text-transform: capitalize;
+  text-transform: capitalize;
 }
 
 .about__text {
@@ -225,8 +245,7 @@ text-transform: capitalize;
   text-transform: capitalize;
 }
 
-.about_content-images img
-{
+.about_content-images img {
   max-width: 327px;
   height: 327px;
   /* background: url(../images/procedure_one.jpg), lightgray -354.562px -191px / 204.358% 212.805% no-repeat; */
@@ -283,15 +302,44 @@ text-transform: capitalize;
 .card {
   border: 1px solid black; /*remove*/
   border-radius: 4px 120px;
-  background-image: linear-gradient(180deg, rgba(1, 28, 68, 0.00) 48.53%, rgba(1, 28, 68, 0.73) 84.61%, var(--color-brand-durk) 101.39%);
+  background-image: linear-gradient(
+    180deg,
+    rgba(1, 28, 68, 0) 48.53%,
+    rgba(1, 28, 68, 0.73) 84.61%,
+    var(--color-brand-durk) 101.39%
+  );
   flex-shrink: 0;
   flex-basis: calc((100% - 32px) / 3);
   padding: 372px 77px 32px 115px;
 }
 
-
 /* .procedures_item {} */
 
+/* slider */
+.slider-botton svg {
+  width: 16px;
+  height: 16px;
+}
+
+.slider-botton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid var(--color-brand-durk);
+  fill: var(--color-brand-durk);
+}
+
+.slider-botton:hover {
+  background-color: var(--color-brand-light);
+  border: 1px solid var(--color-defoult-white);
+  fill: var(--color-defoult-white);
+}
 
 /* contacts section */
 .contacts__title {
@@ -315,4 +363,11 @@ text-transform: capitalize;
   font-size: 16px;
 }
 
+.footer .social-contacts svg {
+  width: 42px;
+  height: 42px;
+}
 
+.footer .social-contacts svg {
+  fill: var(--color-defoult-white);
+}
