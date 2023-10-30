@@ -124,36 +124,38 @@
           <h2 class="title">
             Наші <span class="title--modeficator">процедури</span>
           </h2>
-          <button class="slider-botton" type="button">
-            <svg>
-              <use href="./images/icons.svg#icon-arrow-left"></use>
-            </svg>
-          </button>
-          <ul class="procedures_items">
-            <li class="card">
-              <article class="procedures_item">
-                <!-- <img src="./images/slider_1.jpg" alt="" /> -->
-                <p class="procedure_item-text">Маски <br />для обличчя</p>
-              </article>
-            </li>
-            <li class="card">
-              <article class="procedures_item">
-                <!-- <img src="./images/slider_2.jpg" alt="" /> -->
-                <p class="procedure_item-text">Ін'єкції <br />для обличчя</p>
-              </article>
-            </li>
-            <li class="card">
-              <article class="procedures_item">
-                <!-- <img src="./images/slider_3.jpg" alt="" /> -->
-                <p class="procedure_item-text">Очищення <br />обличчя</p>
-              </article>
-            </li>
-          </ul>
-          <button class="slider-botton" type="button">
-            <svg>
-              <use href="./images/icons.svg#icon-arrow-right"></use>
-            </svg>
-          </button>
+          <div class="slider">
+            <button class="slider-botton" type="button">
+              <svg>
+                <use href="./images/icons.svg#icon-arrow-left"></use>
+              </svg>
+            </button>
+            <ul class="procedures_items">
+              <li class="card">
+                <article class="procedures_item">
+                  <!-- <img src="./images/slider_1.jpg" alt="" /> -->
+                  <p class="procedure_item-text">Маски <br />для обличчя</p>
+                </article>
+              </li>
+              <li class="card">
+                <article class="procedures_item">
+                  <!-- <img src="./images/slider_2.jpg" alt="" /> -->
+                  <p class="procedure_item-text">Ін'єкції <br />для обличчя</p>
+                </article>
+              </li>
+              <li class="card">
+                <article class="procedures_item">
+                  <!-- <img src="./images/slider_3.jpg" alt="" /> -->
+                  <p class="procedure_item-text">Очищення <br />обличчя</p>
+                </article>
+              </li>
+            </ul>
+            <button class="slider-botton" type="button">
+              <svg>
+                <use href="./images/icons.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
 
@@ -162,78 +164,88 @@
           <h2 class="title">
             Як нас <span class="title--modeficator">знайти</span>
           </h2>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9325719461126!2d30.5181753!3d50.4423566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C70YzQstCw0YAg0KLQsNGA0LDRgdCwINCo0LXQstGH0LXQvdC60LAsIDUsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1697018771721!5m2!1suk!2sua"
-            width="605"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-          <div>
-            <h3 class="contacts__title">
-              Запишіться
-              <span class="title--modeficator">безкоштовно</span>
-              та отримайте подарунок
-            </h3>
+          <div class="contacts_content">
+            <iframe
+              class="border-radius"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9325719461126!2d30.5181753!3d50.4423566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C70YzQstCw0YAg0KLQsNGA0LDRgdCwINCo0LXQstGH0LXQvdC60LAsIDUsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1697018771721!5m2!1suk!2sua"
+              width="605"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <div class="contacts_form border-radius">
+              <h3 class="contacts__title">
+                Запишіться
+                <span class="title--modeficator">безкоштовно</span><br />
+                та отримайте подарунок
+              </h3>
+            </div>
           </div>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="container">
-        <nav>
-          <a href="/"><img src="./images/logo.svg" alt="" /></a>
-          <div>
-            <ul>
-              <li><a href="#about">Про нас</a></li>
-              <li><a href="#why-us">Чому ми</a></li>
-              <li><a href="#procedures">Наші процедури</a></li>
-              <li><a href="#contacts">Контакти</a></li>
-            </ul>
-          </div>
-          <div>
-            <ul>
-              <li>
-                <a href="tel:+380960000007">+ 38 (096) 000 00 07</a>
-              </li>
-              <li>
-                <a href="mailto:beautyzone@gmail.com">beautyzone@gmail.com</a>
-              </li>
-              <li>
-                <a
-                  href="https://maps.app.goo.gl/AWW2zYs7cuaM5GSw7"
-                  target="_blank"
-                >
-                  Україна, м. Київ, вул. Тараса Шевченка 5
+        <div class="footer_container">
+          <nav class="footer_nav">
+            <div class="footer_logo">
+              <a href="/"><img src="./images/logo.svg" alt="" /></a>
+            </div>
+            <div class="footer_menu">
+              <ul class="">
+                <li><a href="#about">Про нас</a></li>
+                <li><a href="#why-us">Чому ми</a></li>
+                <li><a href="#procedures">Наші процедури</a></li>
+                <li><a href="#contacts">Контакти</a></li>
+              </ul>
+            </div>
+          </nav>
+          <address class="footer_contacts">
+            <div class="footer_address">
+              <ul>
+                <li>
+                  <a href="tel:+380960000007">+ 38 (096) 000 00 07</a>
+                </li>
+                <li>
+                  <a href="mailto:beautyzone@gmail.com">beautyzone@gmail.com</a>
+                </li>
+                <li>
+                  <a
+                    href="https://maps.app.goo.gl/AWW2zYs7cuaM5GSw7"
+                    target="_blank"
+                  >
+                    Україна, м. Київ,<br> вул. Тараса Шевченка 5
+                  </a>
+                </li>
+              </ul>
+              <div class="social-contacts">
+                <a href="tel:+380960000007">
+                  <svg>
+                    <use href="./images/icons.svg#icon-phone"></use>
+                  </svg>
                 </a>
-              </li>
-            </ul>
-            <div class="social-contacts">
-              <a href="tel:+380960000007">
-                <svg>
-                  <use href="./images/icons.svg#icon-phone"></use>
-                </svg>
-              </a>
-              <a href="#">
-                <svg>
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-              <a href="#">
-                <svg>
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
+                <a href="#">
+                  <svg>
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg>
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="footer_info">
+              <a href="#" target="_blank">Політика конфіденційності</a>
+              <p>&copy; 2022 Дані захищені</p>
             </div>
           </div>
-          <div>
-            <a href="#" target="_blank">Політика конфіденційності</a>
-            <p>&copy; 2022 Дані захищені</p>
-          </div>
-        </nav>
-        <img src="images/footer.jpg" alt="" />
+        </div>
+
+        <!-- <img src="images/footer.jpg" alt="" /> -->
       </div>
     </footer>
   </body>

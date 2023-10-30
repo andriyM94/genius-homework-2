@@ -43,12 +43,15 @@
   --color-first-grey: #4a4a4a;
 }
 
-* {
+*,
+::after,
+::before {
   box-sizing: border-box;
 }
 
 a {
   text-decoration: none;
+  display: inline-block;
 }
 
 ul {
@@ -253,16 +256,14 @@ p {
   /* background: #D9D9D9; */
 }
 
-/* .about_content-images {
-  max-width: 500px;
-} */
-
 /* why_us section */
 .why-us {
   padding: 90px 0 48px 0;
 }
 
 .why-us__itms {
+  display: flex;
+  justify-content: space-evenly;
   color: var(--color-defoult-black);
   font-size: 18px;
   line-height: 133%;
@@ -281,9 +282,13 @@ p {
 }
 
 /* procedures section */
+.procedures {
+  padding: 48px 0;
+}
 .procedures_items {
   display: flex;
   gap: 16px;
+  flex-grow: 1;
   justify-content: center;
 }
 
@@ -308,14 +313,19 @@ p {
     rgba(1, 28, 68, 0.73) 84.61%,
     var(--color-brand-durk) 101.39%
   );
-  flex-shrink: 0;
+  /* flex-shrink: 0; */
   flex-basis: calc((100% - 32px) / 3);
   padding: 372px 77px 32px 115px;
 }
 
-/* .procedures_item {} */
-
 /* slider */
+.slider {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 0 12px;
+}
+
 .slider-botton svg {
   width: 16px;
   height: 16px;
@@ -323,6 +333,7 @@ p {
 
 .slider-botton {
   display: flex;
+  flex-shrink: 0;
   justify-content: center;
   align-items: center;
   cursor: pointer;
@@ -342,10 +353,30 @@ p {
 }
 
 /* contacts section */
+.contacts {
+  padding: 48px 0 96px 76px;
+}
+
 .contacts__title {
   color: var(--color-defoult-white);
   font-size: 22px;
   font-weight: 600;
+  text-align: center;
+}
+
+.contacts_content {
+  display: flex;
+  gap: 32px;
+}
+
+.border-radius {
+  border-radius: 32px;
+}
+
+.contacts_form {
+  background-color: var(--color-brand-durk);
+  padding: 48px 56px;
+  flex-basis: 423px;
 }
 
 /* footer section */
@@ -356,6 +387,37 @@ p {
   background-size: cover;
   background-position: center;
   padding: 56px 0;
+}
+
+.footer_container {
+  display: flex;
+  gap: 20px;
+}
+
+.footer_nav,
+.footer_contacts {
+  display: flex;
+  flex-basis: 50%;
+  gap: 20px;
+}
+
+.footer_contacts {
+  font-style: normal;
+}
+
+.footer_address,
+.footer_info,
+.footer_menu,
+.footer_logo {
+  flex-grow: 1;
+}
+
+.footer ul li {
+  margin-bottom: 16px;
+}
+
+.footer_menu ul li:last-child {
+  margin-bottom: 0;
 }
 
 .footer a {
@@ -370,4 +432,8 @@ p {
 
 .footer .social-contacts svg {
   fill: var(--color-defoult-white);
+}
+
+.footer_info a {
+  margin-bottom: 16px;
 }
