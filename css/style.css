@@ -63,7 +63,7 @@ ul {
 body {
   font-family: Robot, sans-serif;
   font-weight: 400;
-  columns: var(--color-brand-durk);
+  color: var(--color-brand-durk);
   margin: 0;
 }
 
@@ -293,7 +293,7 @@ p {
 }
 
 .procedures_item {
-  columns: var(--color-defoult-white);
+  color: var(--color-defoult-white);
   font-size: 22px;
   line-height: 118%;
   text-align: center;
